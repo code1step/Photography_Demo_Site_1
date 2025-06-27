@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gallery | Capturer Photography</title>
+  <meta name="description" content="Explore our photography portfolio. Browse wedding shots, portraits, product sessions, and more from Capturer Photography.">
+  <link rel="canonical" href="https://yourdomain.com/gallery" />
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gallery | Capturer Photography">
+  <meta property="og:description" content="See our best photography highlights — weddings, events, portraits, and products.">
+  <meta property="og:image" content="https://yourdomain.com/assets/og-gallery.jpg">
+  <meta property="og:url" content="https://yourdomain.com/gallery">
+  <meta property="og:site_name" content="Capturer Photography">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | Capturer Photography">
+  <meta name="twitter:description" content="Explore Capturer Photography’s visual storytelling.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/og-gallery.jpg">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+      <div id="header-placeholder"></div>
+      <div class="background-layer"></div>
+
+  <main>
+      <section class="gallery-section">
+      <h1 class="gallery-title cursive">  Our Gallery</h1>
+ <div class="gallery">
+    <div class="col col-1">
+      <a href="assets/gallery/pic6.jpg" class="lightbox"><img src="assets/gallery/pic6.jpg" alt="Gallery image 6" loading="lazy" /></a>
+      <a href="assets/gallery/pic2.jpg" class="lightbox"><img src="assets/gallery/pic2.jpg" alt="Gallery image 2" loading="lazy" /></a>
+      <a href="assets/gallery/pic3.jpg" class="lightbox"><img src="assets/gallery/pic3.jpg" alt="Gallery image 3" loading="lazy" /></a>
+      <a href="assets/gallery/pic4.jpg" class="lightbox"><img src="assets/gallery/pic4.jpg" alt="Gallery image 4" loading="lazy" /></a>
+      <a href="assets/gallery/pic5.jpg" class="lightbox"><img src="assets/gallery/pic5.jpg" alt="Gallery image 5" loading="lazy" /></a>
+
+      <a href="assets/gallery/pic7.jpg" class="lightbox"><img src="assets/gallery/pic7.jpg" alt="Gallery image 7" loading="lazy" /></a>
+      <a href="assets/gallery/pic8.jpg" class="lightbox"><img src="assets/gallery/pic8.jpg" alt="Gallery image 8" loading="lazy" /></a>
+      <a href="assets/gallery/pic9.jpg" class="lightbox"><img src="assets/gallery/pic9.jpg" alt="Gallery image 9" loading="lazy" /></a>
+      <a href="assets/gallery/pic1.jpg" class="lightbox"><img src="assets/gallery/pic1.jpg" alt="Gallery image 1" loading="lazy" /></a>
+    </div>
+
+    <div class="col col-2">
+      <a href="assets/gallery/pic15.jpg" class="lightbox"><img src="assets/gallery/pic15.jpg" alt="Gallery image 15" loading="lazy" /></a>
+      <a href="assets/gallery/pic11.jpg" class="lightbox"><img src="assets/gallery/pic11.jpg" alt="Gallery image 11" loading="lazy" /></a>
+      <a href="assets/gallery/pic12.jpg" class="lightbox"><img src="assets/gallery/pic12.jpg" alt="Gallery image 12" loading="lazy" /></a>
+      <a href="assets/gallery/pic13.jpg" class="lightbox"><img src="assets/gallery/pic13.jpg" alt="Gallery image 13" loading="lazy" /></a>
+      <a href="assets/gallery/pic14.jpg" class="lightbox"><img src="assets/gallery/pic14.jpg" alt="Gallery image 14" loading="lazy" /></a>
+
+      <a href="assets/gallery/pic16.jpg" class="lightbox"><img src="assets/gallery/pic16.jpg" alt="Gallery image 16" loading="lazy" /></a>
+      <a href="assets/gallery/pic17.jpg" class="lightbox"><img src="assets/gallery/pic17.jpg" alt="Gallery image 17" loading="lazy" /></a>
+      <a href="assets/gallery/pic10.jpg" class="lightbox"><img src="assets/gallery/pic10.jpg" alt="Gallery image 10" loading="lazy" /></a>
+      <a href="assets/gallery/pic18.jpg" class="lightbox"><img src="assets/gallery/pic18.jpg" alt="Gallery image 18" loading="lazy" /></a>
+    </div>
+
+    <div class="col col-3">
+      
+      <a href="assets/gallery/pic20.jpg" class="lightbox"><img src="assets/gallery/pic20.jpg" alt="Gallery image 20" loading="lazy" /></a>
+      <a href="assets/gallery/pic21.jpg" class="lightbox"><img src="assets/gallery/pic21.jpg" alt="Gallery image 21" loading="lazy" /></a>
+      <a href="assets/gallery/pic22.jpg" class="lightbox"><img src="assets/gallery/pic22.jpg" alt="Gallery image 22" loading="lazy" /></a>
+      <a href="assets/gallery/pic23.jpg" class="lightbox"><img src="assets/gallery/pic23.jpg" alt="Gallery image 23" loading="lazy" /></a>
+      <a href="assets/gallery/pic24.jpg" class="lightbox"><img src="assets/gallery/pic24.jpg" alt="Gallery image 24" loading="lazy" /></a>
+      <a href="assets/gallery/pic25.jpg" class="lightbox"><img src="assets/gallery/pic25.jpg" alt="Gallery image 25" loading="lazy" /></a>
+      <a href="assets/gallery/pic26.jpg" class="lightbox"><img src="assets/gallery/pic26.jpg" alt="Gallery image 26" loading="lazy" /></a>
+      <a href="assets/gallery/pic19.jpg" class="lightbox"><img src="assets/gallery/pic19.jpg" alt="Gallery image 19" loading="lazy" /></a>
+    </div>
+  </div>
+
+    </section>
+  </main>
+
+
+ <script src="nav.js"></script>
+<script>
+    document.querySelectorAll('.lightbox').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+        overlay.innerHTML = `<img src="${this.href}" alt="">`;
+        overlay.addEventListener('click', () => overlay.remove());
+        document.body.appendChild(overlay);
+      });
+    });
+   
+
+  fetch('header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+
+  </script>
+  
+  
+</body>
+</html>
