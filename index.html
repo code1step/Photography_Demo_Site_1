@@ -51,14 +51,14 @@
           <div class="nav__logo">
             <a href="#">
               <!-- <img src="assets/logo-dark.png" alt="logo" /> -->
-               <h2 id="logo-txt">AlwaysFramed</h2>
+               <h2 id="logo-txt" class="reveal fade-right" data-delay="4s">AlwaysFramed</h2>
             </a>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
           </div>
         </div>
-        <ul class="nav__links" id="nav-links">
+        <ul class="nav__links reveal fade-left" data-delay="4s" id="nav-links">
            <li class="nav__logo">
             <a href="#">
               <!-- <img src="assets/logo-dark.png" alt="logo" /> -->
@@ -77,15 +77,29 @@
       </nav>
             
     </header>
-    <section class="home">
-       <div class="hero-text">
-               <h1><span class="gradient-text">Focus.</span> <span class="gradient-text">Frame.</span> <span class="gradient-text">Forever.</span></h1>
-              <p>Your story, beautifully told through our lens.</p>
-             </div>
 
-             <iframe class="spline-bg" src='https://my.spline.design/claritystream-E9f6LSxqiYPmBK6JcL7G0cEs/' frameborder='0' width='100%' height='100%'></iframe>
+<section class="home">
+  <div class="home__container">
+    <div class="spline-wrapper">
+      <iframe
+        class="spline-bg"
+        src="https://my.spline.design/claritystream-E9f6LSxqiYPmBK6JcL7G0cEs/"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="hero-text">
+      <h1>
+        <span class="gradient-text reveal-hero zoom-in" data-delay="0.5s">Focus.</span>
+        <span class="gradient-text reveal-hero zoom-in" data-delay="1s">Frame.</span>
+        <span class="gradient-text reveal-hero zoom-in" data-delay="1.5s">Forever.</span>
+      </h1>
+      <p class="reveal-hero zoom-in" data-delay="3s">Your story, beautifully told through our lens.</p>
+    </div>
+  </div>
+</section>
 
-    </section>
+
+
 
    
 <section class="services" id="services">
@@ -93,14 +107,14 @@
   <h1 class="section__header">Our Services</h1>
   <div class="portfolio__grid">
     
-    <div class="portfolio__card tall">
+    <div class="portfolio__card tall  reveal fade-up" data-delay=".5s">
       <img src="assets/service-1.jpg"  loading="lazy"  alt="Wedding Photography" />
       <div class="portfolio__content">
                  <h3>Portrait Sessions</h3>
         <p>Studio or outdoor portraits with creative lighting.</p>
       </div>
     </div>
-     <div class="portfolio__card wide">
+     <div class="portfolio__card wide  reveal fade-left" data-delay=".5s">
       <img src="assets/service-2.jpg" loading="lazy"  alt="Portrait Sessions" />
       <div class="portfolio__content">
 
@@ -109,7 +123,7 @@
       </div>
     </div>
 
-    <div class="portfolio__card ">
+    <div class="portfolio__card  reveal fade-up " data-delay=".5s">
       <img src="assets/service-3.jpg"  loading="lazy" alt="Event Coverage" />
       <div class="portfolio__content">
         <h3>Event Coverage</h3>
@@ -119,7 +133,7 @@
 
    
 
-    <div class="portfolio__card">
+    <div class="portfolio__card  reveal fade-right" data-delay=".5s">
       <img src="assets/service-4.jpg" loading="lazy"  alt="Product Photography" />
       <div class="portfolio__content">
         <h3>Product Photography</h3>
@@ -127,7 +141,7 @@
       </div>
     </div>
 
-    <div class="portfolio__card wide">
+    <div class="portfolio__card wide  reveal fade-left" data-delay="1s">
       <img src="assets/service-5.jpg"  loading="lazy" alt="Drone Shoots" />
       <div class="portfolio__content">
         <h3>Drone Shoots</h3>
@@ -146,8 +160,8 @@
  <div class="gallery">
     <div class="col col-1">
 
-      <a href="assets/pic2.jpg" class="lightbox"><img src="assets/gallery/pic2.jpg" alt="Gallery image 2" loading="lazy" /></a>
-     <a href="assets/pic5.jpg" class="lightbox"><img src="assets/gallery/pic5.jpg" alt="Gallery image 5" loading="lazy" /></a>
+      <a href="assets/pic2.jpg" class="lightbox reveal fade-left" data-delay=""><img src="assets/gallery/pic2.jpg" alt="Gallery image 2" loading="lazy" /></a>
+     <a href="assets/pic5.jpg" class="lightbox reveal fade-left" data-delay=""><img src="assets/gallery/pic5.jpg" alt="Gallery image 5" loading="lazy" /></a>
       
       
       
@@ -157,8 +171,8 @@
 
     <div class="col col-2">
       
-     <a href="assets/pic9.jpg" class="lightbox"><img src="assets/gallery/pic9.jpg" alt="Gallery image 9" loading="lazy" /></a>
-      <a href="assets/pic8.jpg" class="lightbox"><img src="assets/gallery/pic8.jpg" alt="Gallery image 8" loading="lazy" /></a>
+     <a href="assets/pic9.jpg" class="lightbox reveal fade-down" data-delay=""><img src="assets/gallery/pic9.jpg" alt="Gallery image 9" loading="lazy" /></a>
+      <a href="assets/pic8.jpg" class="lightbox reveal fade-up" data-delay=""><img src="assets/gallery/pic8.jpg" alt="Gallery image 8" loading="lazy" /></a>
      
       
       
@@ -166,10 +180,10 @@
     </div>
 
     <div class="col col-3">
-      <a href="assets/pic3.jpg" class="lightbox"><img src="assets/gallery/pic3.jpg" alt="Gallery image 3" loading="lazy" /></a>
+      <a href="assets/pic3.jpg" class="lightbox reveal fade-right" data-delay=""><img src="assets/gallery/pic3.jpg" alt="Gallery image 3" loading="lazy" /></a>
       
       
-      <a href="assets/pic7.jpg" class="lightbox"><img src="assets/gallery/pic7.jpg" alt="Gallery image 7" loading="lazy" /></a>
+      <a href="assets/pic7.jpg" class="lightbox reveal fade-right" data-delay=""><img src="assets/gallery/pic7.jpg" alt="Gallery image 7" loading="lazy" /></a>
      
      
     </div>
@@ -231,7 +245,7 @@
 
 <section class="about-section" id="about">
   <div class="about-wrapper">
-    <div class="about-text">
+    <div class="about-text reveal fade-left" data-delay=".5s">
       <h1 class="section__header__color">About Us</h1>
       <p>
         At <strong>AlwaysFramed</strong>, we are passionate about turning your moments into lasting memories. With a dedicated team of photographers and storytellers, we specialize in portraits, weddings, events, and commercial shoots. Our mission is to bring your story to life with clarity, emotion, and creativity.
@@ -240,7 +254,7 @@
         With years of experience and a love for the craft, we ensure each session is personalized, professional, and unforgettable.
       </p>
     </div>
-    <div class="about-image">
+    <div class="about-image reveal fade-right" data-delay=".5s">
       <img src="assets/AF-1.png" alt="About AlwaysFramed" />
     </div>
   </div>
@@ -513,6 +527,30 @@
       img.src = src;
     });
   });
+
+
+
+
+const revealElements = document.querySelectorAll('.reveal, .reveal-hero');
+
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  revealElements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+    const delay = el.dataset.delay || '0s';
+    el.style.setProperty('--delay', delay);
+
+    if (boxTop < triggerBottom) {
+      el.classList.add('active');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+
 
 
   </script>
